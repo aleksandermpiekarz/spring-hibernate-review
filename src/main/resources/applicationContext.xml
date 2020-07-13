@@ -12,6 +12,11 @@
         class="com.aleksander.springdemo.coaches.TrackCoach">
 	</bean>
 
+    <bean id="myLoggerConfig" class="com.aleksander.springdemo.helpers.LoggerConfig" init-method="initLogger">
+        <property name="rootLoggerLevel" value="FINE" />
+        <property name="printedLoggerLevel" value="FINE"/>
+    </bean>
+
 </beans>
 
 
