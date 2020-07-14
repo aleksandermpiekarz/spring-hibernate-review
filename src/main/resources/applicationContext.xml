@@ -9,17 +9,17 @@
 
 	
     <bean id="myCoach"
-        class="com.aleksander.springdemo.coaches.TrackCoach">
+          class="com.aleksander.springdemo.coaches.TrackCoach">
+        <constructor-arg ref="myFortune"/>
 	</bean>
 
-    <bean id="myLoggerConfig" class="com.aleksander.springdemo.helpers.LoggerConfig" init-method="initLogger">
+    <bean id="myLoggerConfig"
+          class="com.aleksander.springdemo.helpers.LoggerConfig" init-method="initLogger">
         <property name="rootLoggerLevel" value="FINE" />
         <property name="printedLoggerLevel" value="FINE"/>
     </bean>
 
+    <bean id="myFortune"
+          class="com.aleksander.springdemo.helpers.services.HappyFortuneInterface">
+    </bean>
 </beans>
-
-
-
-
-

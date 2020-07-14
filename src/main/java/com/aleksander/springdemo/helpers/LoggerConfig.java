@@ -43,5 +43,4 @@ public class LoggerConfig {
         // add handler to the logger
         loggerParent.addHandler(consoleHandler);
     }
-
 }
