@@ -20,6 +20,6 @@
     </bean>
 
     <bean id="myFortune"
-          class="com.aleksander.springdemo.helpers.services.HappyFortuneInterface">
+          class="com.aleksander.springdemo.helpers.services.HappyFortuneService">
     </bean>
 </beans>

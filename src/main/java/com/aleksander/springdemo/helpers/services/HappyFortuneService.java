@@ -1,6 +1,6 @@
 package com.aleksander.springdemo.helpers.services;
 
-public class HappyFortuneInterface implements FortuneService {
+public class HappyFortuneService implements FortuneService {
 
     @Override
     public String getFortune() {
